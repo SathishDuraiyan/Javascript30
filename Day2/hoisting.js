@@ -1,6 +1,4 @@
 // hoisting 
-
-// Function Declaration
 addDeclaration(); 
 
 function addDeclaration() {
