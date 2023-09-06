@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day-1:JS30</title>
+    <style>
+      body {
+        max-width: 500px;
+        margin: auto;
+        background: rgb(223, 181, 181);
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button id="button_A">Press Me</button>
+    <h3 id="heading_A"></h3>
+
+    <script>
+      //   Working with numbers and arithmetic
+      document.write((10 - 6) * 10 + 2);
+
+      //   What are strings
+      console.log("\nHii,connections");
+      document.write("<br>What's Up");
+
+      //   Working with variables
+      var greeting = "<br>Hello World!";
+      document.write(greeting);
+
+      //   Dialog boxes — alert(), confirm() and prompt()
+      const buttonA = document.querySelector("#button_A");
+      const headingA = document.querySelector("#heading_A");
+
+      buttonA.onclick = () => {
+        const name = prompt("What is your name?");
+        alert(`Hello ${name}, nice to see you!`);
+        confirm("this is confirmation box");
+        headingA.textContent = `Welcome ${name}`;
+      };
+    </script>
+  </body>
+</html>
